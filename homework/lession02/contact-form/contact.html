@@ -5,5 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact form</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Contact form</h1>
+
+      <form>
+        <fieldset>
+          <!--Group of input-->
+          <legend>Your name</legend>
+          <!--Main label-->
+          <label for="first-name">First name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="First Name"
+          />
+          <label for="last-name">Last name</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last Name"
+          />
+        </fieldset>
+        <div>
+          <label for="email"> Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g.hello@contact.net"
+          />
+        </div>
+        <fieldset>
+          <legend>Phone*</legend>
+
+          <label for="phone-country">Country code</label>
+          <input
+            type="tel"
+            id="phone-country"
+            name="phone-country"
+            placeholder="###"
+            required
+          />
+
+          <label for="phone-area">Area code</label>
+          <input
+            type="tel"
+            id="phone-area"
+            name="phone-area"
+            placeholder="###"
+            required
+          />
+
+          <label for="phone-number">Number code</label>
+          <input
+            type="tel"
+            id="phone-number"
+            name="phone-number"
+            placeholder="####"
+            required
+          />
+        </fieldset>
+        <div>
+          <label for="message-subject">Message Subject*</label>
+          <select id="message-subject" name="message-subject" required>
+            <option value="" disabled selected>Other</option>
+            <option value="help">Help</option>
+            <option value="support">Support</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message*</label>
+          <textarea id="message" name="message" rows="5" required> </textarea>
+        </div>
+        <div>
+          <label for="verification">Verification*</label>
+        </div>
+        <button type="submit">Submit form</button>
+      </form>
+    </main>
+  </body>
 </html>
